@@ -1,15 +1,16 @@
 # Change these first
-owner: dungdinhmanh # Your GitHub organization or username, where this repository lives
+owner: Kivot-OS # Your GitHub organization or username, where this repository lives
 repo: KivotOS-status # The name of this repository
 
 sites:
-  - name: KivotOS repository
-    url: https://github.com/Kivot-OS/KivotOS-repo/
+  - name: KivotOS APT Repository
+    url: https://kivot-os.github.io/KivotOS-repo/dists/trixie/InRelease
+    expectedStatusCodes: [200]
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-#  cname: demo.upptime.js.org
+  #  cname: demo.upptime.js.org
   baseUrl: /KivotOS-status
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
